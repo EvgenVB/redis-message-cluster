@@ -1,0 +1,22 @@
+{
+  "name": "redis-message-cluster",
+  "version": "0.0.1",
+  "description": "Redis message cluster. Can generate by one elected node messages one per 500ms and handles it by multiple nodes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "Evgeniy Bazhenov <evgenvb@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "redis-mock": "^0.17.0"
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.8",
+    "randomstring": "^1.1.5",
+    "redis": "^2.7.1",
+    "redlock": "^3.0.0"
+  }
+}
