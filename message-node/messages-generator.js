@@ -7,8 +7,8 @@ class MessagesGenerator {
         this._redis = redis;
         // redis key prefix to store messages
         this._prefix = this._options.prefix + ':messages:' + this._guid + ':';
-        // counter used to prevent messages redis key collision
-        // in case of messages generates faster then 1 message per ms
+        // counter used to prevent message redis-key collision
+        // in case of generation speed is faster then 1 message per ms
         // primitive but works well in this context
         this._counter = 0;
     }

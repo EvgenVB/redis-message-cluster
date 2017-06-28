@@ -12,7 +12,6 @@ class MessagesStats {
     incrStats(statsObject) {
         const promises = [];
         if (statsObject.handled > 0) {
-            console.log(statsObject.handled);
             promises.push(this.incrHandled(statsObject.handled));
         }
 
@@ -21,7 +20,6 @@ class MessagesStats {
         }
 
         if (statsObject.scanned > 0) {
-            console.log(statsObject.scanned);
             promises.push(this.incrScanned(statsObject.scanned));
         }
 

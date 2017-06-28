@@ -156,7 +156,6 @@ class MessageNode {
         }
         this._handleMessagesTimeout = setTimeout(() => {
             this._handler.handleMessages().then((stats) => {
-                console.log(stats);
                 return this._stats.incrStats(stats);
             }).then(() => {
                 this._handleMessages();

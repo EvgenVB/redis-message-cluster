@@ -14,7 +14,6 @@ class MessageHandler {
     }
 
     async handleMessages(cursor = '0') {
-        console.log('handle');
         const stats = {
             scanned: 0,
             handled: 0,
